@@ -14,7 +14,7 @@ import java.util.List;
 
 @CrossOrigin(origins = {"http://localhost:4200"})
 @RestController
-@RequestMapping("/Materia")
+@RequestMapping("/Nota")
 public class NotasController {
 
     @Autowired

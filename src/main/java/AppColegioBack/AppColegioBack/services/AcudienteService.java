@@ -30,17 +30,17 @@ public class AcudienteService implements AcudienteInt {
 
     @Override
     public Acudiente save(Acudiente acudiente) {
-        return null;
+        return acudienteRepository.save(acudiente);
     }
 
     @Override
     public Acudiente findById(Long id) {
-        return null;
+        return acudienteRepository.findById(id).orElse(null);
     }
 
     @Override
     public void delete(Long id) {
-
+        acudienteRepository.deleteById(id);
     }
 
 
